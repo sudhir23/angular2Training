@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import './rxjs-operators';
 
 @Component({
-  selector: 'ocr-express',
+  selector: 'angular-training',
   templateUrl: 'app/app.component.html',
   providers: [
   ]
