@@ -20,7 +20,7 @@ var config = {
     proxyHost: 'localhost',
     proxyPort: '9000',
     restBasePath: 'api/'
-  }
+  },
   browser: 'windows',
   browserConfig: {
     osx: '/Applications/Google\ Chrome.app',
