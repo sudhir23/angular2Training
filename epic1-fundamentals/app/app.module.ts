@@ -8,6 +8,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 //import {routing} from './components/routes/[pathToRoutes].routes';
 import {AppComponent} from './app.component';
+import {InventoryService} from "./services/InventoryService.service";
+import {InventoryList} from "./components/InventoryList/InventoryList.component";
+import {BackendInventoryService} from "./services/backendServices/backendInventoryService.service";
+
 @NgModule(({
   imports: [
     BrowserModule,
@@ -17,9 +21,11 @@ import {AppComponent} from './app.component';
 //    routing
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    InventoryList
   ],
   providers: [
+    InventoryService, BackendInventoryService
   ],
   bootstrap: [AppComponent]
 }))
