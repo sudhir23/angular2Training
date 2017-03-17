@@ -24,6 +24,7 @@ export class InventoryList {
     }
 
     setCurrentItem(item:IInventoryItem) {
+        this.inventoryService.setCurrentItem(item);
         this.currentItem = item;
     }
 }

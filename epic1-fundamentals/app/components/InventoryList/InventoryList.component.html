@@ -11,9 +11,23 @@
     <span>price: {{item.price}}</span>
 </div>
 
-<div>
+<table *ngIf="currentItem" style="width:50%">
+    <tr>
+        <th>guid</th>
+        <th>name</th>
+        <th>price</th>
+    </tr>
+    <tr>
+        <td>{{currentItem?.guid}}</td>
+        <td>{{currentItem?.name}}</td>
+        <td>{{currentItem?.price}}</td>
+    </tr>
+</table>
+
+<!--<div *ngIf="currentItem">
     <p>Guid: {{currentItem?.guid}}</p>
     <p>name: {{currentItem?.name}}</p>
     <p>price: {{currentItem?.price}}</p>
 
 </div>
+-->
